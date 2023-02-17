@@ -43,11 +43,11 @@
                   <h5 class="card-text">Area (A) = 0.5 &times; b &times; h</h5>
                 </div>
                 <div class="d-flex card-inputs mx-auto">
-                    <input class="" type="text" placeholder="b"><p>cm</p>
-                    <input class="" type="text" placeholder="h"><p>cm</p>
+                    <input id="baseline-Field" class="" type="text" placeholder="b"><p>cm</p>
+                    <input id="height-Field" class="" type="text" placeholder="h"><p>cm</p>
                 </div>
                 <div class="mx-8 p-3">
-                 <button  class="btn-color w-100  btn-text-style">Calculator</button>
+                 <button id="btn-triangle"  class="btn-color w-100  btn-text-style">Calculator</button>
                 </div>
               </div>
             </div>
@@ -126,8 +126,12 @@
       <section class="w-25 px-2">
         <div class="row row-cols-1 row-cols-md-1">
             <div class="col">
-                <div class="card h-100">
-                 <p class="text-center hr">Area Calculation</p>
+                <div class="card calculation-head h-100">
+                 <h4 class="text-center ">Area Calculation</h4>
+                 <thead>
+                    <td>name</td>
+                    <td>price</td>
+                 </thead>
                 </div>
               </div>
         </div>
@@ -135,5 +139,7 @@
     </main>
     <!-- bootsrap js file  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- js file added -->
+    <script src="./card.js"></script>
 </body>
 </html>

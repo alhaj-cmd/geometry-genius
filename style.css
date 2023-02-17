@@ -50,3 +50,16 @@
     border-radius: 4px;
 
 }
+.calculation-head h4{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+text-decoration-line: underline;
+
+color: rgba(17, 17, 17, 0.8);
+
+}
