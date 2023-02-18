@@ -13,3 +13,16 @@ function displayData(serial, sixcardName, totalCardCalculation) {
     `
     calculation.appendChild(tr);
 }
+
+// card uses in random color
+
+randomColor = function(e) {
+    e.style.background =  "#" + (Math.random() * 0xFFFFFF<<0).toString(16);
+}
+
+// question file add in js
+
+document.getElementById("btn-submit").onclick = function () {
+//     console.log('hello')
+    window.location.href= "http://127.0.0.1:5500/question.html";
+};
