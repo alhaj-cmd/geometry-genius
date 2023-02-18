@@ -1,30 +1,83 @@
 // console.log('card')
 let number = 0;
+// Name of the Triangle card one
 document.getElementById('btn-triangle').addEventListener('click', function(){
     number +=1;
     const triangleField =document.getElementById('baseline-Field').value;
-  
+    const baselineField = document.getElementById('height-Field').value;
+    const triangleName = document.getElementById('triangle-name').innerText;
 
+    const triangleAreaCalculate = 0.5*triangleField*baselineField;
+    const triangleAreaTotal = parseInt(triangleAreaCalculate);
+    displayData(number, triangleName, triangleAreaTotal)
+    
+
+})
+
+// Name of the Rectangle card two
+
+document.getElementById('btn-rectangle').addEventListener('click', function(){
+    number +=1;
+    const rectangleFieldOne =document.getElementById('rectangleFieldOne').value;
+    const rectangleFieldTwo = document.getElementById('rectangleFieldTwo').value;
+    const rectangleNameText = document.getElementById('rectangle-name').innerText;
+
+    const rectangleCalculate = rectangleFieldOne*rectangleFieldTwo;
+    const rectangleCalculateNumber = parseInt(rectangleCalculate);
+    displayData(number, rectangleNameText, rectangleCalculateNumber)
+    
+
+})
+// Name of the Triangle card three
+document.getElementById('btn-parallelogram').addEventListener('click', function(){
+    number +=1;
+    const parallelogramFieldOne = document.getElementById('parallelogramFieldOne').value;
+    const parallelogramFieldTwo = document.getElementById('parallelogramFieldTwo').value;
+    const parallelogramNameText = document.getElementById('parallelogram-name').innerText;
+
+    const parallelogramCalculate = parallelogramFieldOne*parallelogramFieldTwo;
+    const parallelogramCalculateTotal = parseInt(parallelogramCalculate);
+    displayData(number, parallelogramCalculateTotal, parallelogramNameText)
+    
+
+})
+// Name of the Triangle card four
+document.getElementById('btn-triangle').addEventListener('click', function(){
+    number +=1;
+    const triangleField =document.getElementById('baseline-Field').value;
     const baselineField = document.getElementById('height-Field').value;
     const triangleName = document.getElementById('triangle-name').innerText;
 
     const triangleArea = 0.5*triangleField*baselineField;
     const triangleAreaParse = parseInt(triangleArea);
-    // console.log(triangleArea,triangleName);
-    displayData( triangleAreaParse, triangleName)
+    displayData(number, triangleAreaParse, triangleName)
+    
+
+})
+// Name of the Triangle card five
+document.getElementById('btn-triangle').addEventListener('click', function(){
+    number +=1;
+    const triangleField =document.getElementById('baseline-Field').value;
+    const baselineField = document.getElementById('height-Field').value;
+    const triangleName = document.getElementById('triangle-name').innerText;
+
+    const triangleArea = 0.5*triangleField*baselineField;
+    const triangleAreaParse = parseInt(triangleArea);
+    displayData(number, triangleAreaParse, triangleName)
+    
+
+})
+// Name of the Triangle card six
+document.getElementById('btn-triangle').addEventListener('click', function(){
+    number +=1;
+    const triangleField =document.getElementById('baseline-Field').value;
+    const baselineField = document.getElementById('height-Field').value;
+    const triangleName = document.getElementById('triangle-name').innerText;
+
+    const triangleArea = 0.5*triangleField*baselineField;
+    const triangleAreaParse = parseInt(triangleArea);
+    displayData(number, triangleAreaParse, triangleName)
     
 
 })
  
-function displayData(triangleAreaParse, triangleName){
-    const calculation =document.getElementById('calculation');
-    const tr= document.createElement("tr");
-    tr.innerHTML= `
-    <td>${1}</td>    
-    <td>${triangleName}</td>    
-    <td>${triangleAreaParse}</td>cm<sup>2</sup>    
-     
-    
-    `
-    calculation.appendChild(tr);
-}
