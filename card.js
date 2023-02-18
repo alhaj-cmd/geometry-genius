@@ -55,15 +55,15 @@ document.getElementById('btn-rhombusField').addEventListener('click', function()
 
 })
 // Name of the Triangle card five
-document.getElementById('btn-triangle').addEventListener('click', function(){
+document.getElementById('btn-pentagon').addEventListener('click', function(){
     number +=1;
-    const triangleField =document.getElementById('baseline-Field').value;
-    const baselineField = document.getElementById('height-Field').value;
-    const triangleName = document.getElementById('triangle-name').innerText;
+    const pentagonFieldOne =document.getElementById('pentagonFieldOne').value;
+    const pentagonFieldTwo = document.getElementById('pentagonFieldTwo').value;
+    const pentagonName = document.getElementById('pentagon-name').innerText;
 
-    const triangleArea = 0.5*triangleField*baselineField;
-    const triangleAreaParse = parseInt(triangleArea);
-    displayData(number, triangleAreaParse, triangleName)
+    const pentagonCalculate = 0.5*pentagonFieldOne*pentagonFieldTwo;
+    const pentagonCalculateTotal = parseInt(pentagonCalculate);
+    displayData(number, triangleAreaParse, pentagonName)
     
 
 })
