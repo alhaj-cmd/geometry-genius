@@ -42,15 +42,15 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 
 })
 // Name of the Triangle card four
-document.getElementById('btn-triangle').addEventListener('click', function(){
+document.getElementById('btn-rhombusField').addEventListener('click', function(){
     number +=1;
-    const triangleField =document.getElementById('baseline-Field').value;
-    const baselineField = document.getElementById('height-Field').value;
-    const triangleName = document.getElementById('triangle-name').innerText;
+    const rhombusFieldOne =document.getElementById('rhombusFieldOne').value;
+    const rhombusFieldTwo = document.getElementById('rhombusFieldTwo').value;
+    const rhombusName = document.getElementById('rhombus-name').innerText;
 
-    const triangleArea = 0.5*triangleField*baselineField;
-    const triangleAreaParse = parseInt(triangleArea);
-    displayData(number, triangleAreaParse, triangleName)
+    const rhombusCalculate = 0.5*rhombusFieldOne*rhombusFieldTwo;
+    const rhombusCalculateTotal = parseInt(rhombusCalculate);
+    displayData(number, rhombusCalculateTotal, rhombusName)
     
 
 })
