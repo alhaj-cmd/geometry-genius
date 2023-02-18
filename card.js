@@ -36,7 +36,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const parallelogramNameText = document.getElementById('parallelogram-name').innerText;
 
     const parallelogramCalculate = parallelogramFieldOne*parallelogramFieldTwo;
-    const parallelogramCalculateTotal = parseInt(parallelogramCalculate);
+    const parallelogramCalculateTotal = (parallelogramCalculate);
     displayData(number, parallelogramCalculateTotal, parallelogramNameText)
     
 
@@ -62,7 +62,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     const pentagonName = document.getElementById('pentagon-name').innerText;
 
     const pentagonCalculate = 0.5*pentagonFieldOne*pentagonFieldTwo;
-    const pentagonCalculateTotal = parseInt(pentagonCalculate);
+    const pentagonCalculateTotal = parseFloat(pentagonCalculate);
     displayData(number, pentagonCalculateTotal, pentagonName)
     
 
@@ -75,7 +75,7 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
     const ellipseName= document.getElementById('ellipse-name').innerText;
 
     const ellipseCalculate =3.14159*ellipseFieldOne*ellipseFieldTwo;
-    const ellipseCalculateTotal = parseInt(ellipseCalculate);
+    const ellipseCalculateTotal = ellipseCalculate.toFixed(2);
     displayData(number, ellipseCalculateTotal, ellipseName)
     
 
