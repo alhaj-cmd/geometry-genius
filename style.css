@@ -1,11 +1,13 @@
-.navbar-style{
+.navbar-style {
     background: rgba(16, 144, 216, 0.1);
     border-radius: 8px;
 }
-.font-style{
+
+.font-style {
     font-family: 'Inter', sans-serif;
 }
-.text-style{
+
+.text-style {
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -14,7 +16,8 @@
     color: rgba(17, 17, 17, 0.8);
 
 }
-.btn-color{
+
+.btn-color {
     width: 120px;
     height: 48px;
     background: #1090D8;
@@ -22,13 +25,14 @@
     color: #FFFFFF;
     border: none;
 }
-.btn-text-style{
+
+.btn-text-style {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
 }
 
-.card-text-style{
+.card-text-style {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -37,13 +41,16 @@
     text-align: center;
     color: #414141;
 }
-.card-inputs p{
+
+.card-inputs p {
     margin: 4px;
 }
-.card img{
+
+.card img {
     height: 250px;
 }
-.card-inputs input{
+
+.card-inputs input {
     width: 60px;
     height: 30px;
     background: #F1F1F1;
@@ -51,10 +58,12 @@
     border: none;
 
 }
-.calculation-head{
+
+.calculation-head {
     height: 80vh;
 }
-.calculation-head h4{
+
+.calculation-head h4 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -68,6 +77,29 @@
 
 }
 
-.cart-title{
+.cart-title {
     background-color: #1090D8;
+}
+
+#calculation {
+    position: absolute;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10vh;
+    align-items: center;
+    padding: 5px;
+}
+
+#calculation button {
+    width: 100px;
+    height: 40px;
+    background: #1090D8;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+    margin: 2px;
+    padding: 2px;
+
 }

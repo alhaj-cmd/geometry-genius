@@ -1,173 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dom assignment five</title>\
-    <!-- bootstrap css file link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- css style link -->
-    <link rel="stylesheet" href="./style.css">
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom assignment five</title>\
+  <!-- bootstrap css file link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- css style link -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
 </head>
+
 <body class="mx-2">
-    <!-- navbar added -->
-    <header class="font-style">
-        <nav class="navbar navbar-style ">
-            <div class="container-fluid">
-              <div class="text-style">
-                <p>Interactive<p>
-                <h2>Geometry Books</h2>
-              </div>
-                <!-- <form > -->
-                <button id="btn-submit" class="btn-color btn-text-style" type="text">Blog</button>
-              <!-- </form> -->
+  <!-- navbar added -->
+  <header class="font-style">
+    <nav class="navbar navbar-style ">
+      <div class="container-fluid">
+        <div class="text-style">
+          <p>Interactive
+          <p>
+          <h2>Geometry Books</h2>
+        </div>
+        <!-- <form > -->
+        <button id="btn-submit" class="btn-color btn-text-style" type="text">Blog</button>
+        <!-- </form> -->
+      </div>
+    </nav>
+  </header>
+  <!-- main part added -->
+  <main class="d-flex my-5">
+    <!-- card aside -->
+    <section>
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 g-4">
+        <!-- one triangle card -->
+        <div class="col">
+          <div class="card h-100" onmouseover="randomColor(this)">
+            <img src="./images/triangle.png" class="card-img-top p-4" alt="...">
+            <div class="card-body card-text-style">
+              <p id="triangle-name" class="card-title">Triangle</p>
+              <h5 class="card-text">Area (A) = 0.5 &times; b &times; h</h5>
             </div>
-          </nav>
-    </header>
-    <!-- main part added -->
-    <main class="d-flex my-5" >
-        <!-- card aside -->
-      <section class="bg-light">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 g-4">
-            <!-- one triangle card -->
-            <div class="col">
-              <div class="card h-100" onmouseover="randomColor(this)">
-                <img src="./images/triangle.png" class="card-img-top p-4" alt="...">
-                <div class="card-body card-text-style">
-                  <p id="triangle-name" class="card-title">Triangle</p>
-                  <h5 class="card-text">Area (A) = 0.5 &times; b &times; h</h5>
-                </div>
-                <div class="d-flex card-inputs mx-auto">
-                    <input id="baseline-Field" class="" type="text" placeholder=" b"><p>cm</p>
-                    <input id="height-Field" class="" type="text" placeholder=" h"><p>cm</p>
-                </div>
-                <div class="mx-8 p-3">
-                 <button id="btn-triangle"  class="btn-color w-100  btn-text-style">Calculator</button>
-                </div>
-              </div>
+            <div class="d-flex card-inputs mx-auto">
+              <input id="baseline-Field" class="" type="text" placeholder=" b">
+              <p>cm</p>
+              <input id="height-Field" class="" type="text" placeholder=" h">
+              <p>cm</p>
             </div>
-            <!-- two rectangle card -->
-            <div class="col">
-              <div class="card h-100" onmouseover="randomColor(this)">
-                <img src="./images/rectangle.png" class="card-img-top p-4" alt="...">
-                <div class="card-body card-text-style">
-                  <p id="rectangle-name" class="card-title">Rectangle</p>
-                  <h5 class="card-text">Area (A) = w &times; l </h5>
-                </div>
-                <div class="d-flex card-inputs mx-auto">
-                    <input id="rectangleFieldOne" class="" type="text" placeholder=" w"><p>cm</p>
-                    <input id="rectangleFieldTwo" class="" type="text" placeholder=" l"><p>cm</p>
-                </div>
-                <div class="mx-8 p-3">
-                 <button id="btn-rectangle"  class="btn-color w-100  btn-text-style">Calculator</button>
-                </div>
-              </div>
+            <div class="mx-8 p-3">
+              <button id="btn-triangle" class="btn-color w-100  btn-text-style">Calculator</button>
             </div>
-            <!-- three parallelogram card -->
-            <div class="col">
-                <div class="card h-100" onmouseover="randomColor(this)">
-                  <img src="./images/parallelogram.png" class="card-img-top p-4" alt="...">
-                  <div class="card-body card-text-style">
-                    <p id="parallelogram-name" class="card-title">Parallelogram</p>
-                    <h5 class="card-text">Area (A) = b &times; h</h5>
-                    <h5>b=<span>10</span>cm, h=<span>12</span>cm</h5>
-                  </div>
-                  <div class="d-flex card-inputs mx-auto">
-                    <input id="parallelogramFieldOne" class="" type="text" placeholder=" b"><p>cm</p>
-                    <input id="parallelogramFieldTwo" class="" type="text" placeholder=" h"><p>cm</p>
-                </div>
-                  <div class="mx-8 p-3">
-                   <button id="btn-parallelogram" class="btn-color w-100  btn-text-style">Calculator</button>
-                  </div>
-                </div>
-              </div>
-              <!-- calculattion card -->
-              <section>
-                    <div class="col">
-                        <div class="card  calculation-head">
-                         <h4 class="text-center ">Area Calculation</h4>
-                         <table class="table table-borderless">
-                            <tbody  id="calculation">
-                                <tr>
-                                  <th ></th>
-                                 
-                                </tr>
-                              </tbody>
-                          </table>
-                        </div>
-                      </div>
-              </section>
-              <!-- four rhonbus card -->
-              <div class="col">
-                <div class="card h-100" onmouseover="randomColor(this)">
-                  <img src="./images/rhombus.png" class="card-img-top p-4" alt="...">
-                  <div class="card-body card-text-style">
-                    <p id="rhombus-name" class="card-title">Rhombus</p>
-                    <h5 class="card-text">Area (A) = 0.5 &times; d<sub>1</sub> &times; d<sub>2</sub></h5>
-                    <h5>d<sub>1</sub>=<span>16</span>cm, d<sub>2</sub>=<span>8</span>cm</h5>
-                  </div>
-                  <div class="d-flex card-inputs mx-auto">
-                    <input id="rhombusFieldOne" class="" type="text" placeholder=" #"><p>cm</p>
-                    <input id="rhombusFieldTwo" class="" type="text" placeholder=" #"><p>cm</p>
-                </div>
-                 <div class="mx-8 p-3">
-                   <button id="btn-rhombusField" class="btn-color w-100  btn-text-style">Calculator</button>
-                  </div>
-                </div>
-              </div>
-              <!-- five pentagon card -->
-              <div class="col">
-                <div class="card h-100" onmouseover="randomColor(this)">
-                  <img src="./images/pentagon.png" class="card-img-top p-4" alt="...">
-                  <div class="card-body card-text-style">
-                    <p id="pentagon-name" class="card-title">Pentagon</p>
-                    <h5 class="card-text">Area (A) = 0.5 &times; p &times; b</h5>
-                    <h5>p=<span>6</span>cm, b=<span>10</span>cm</h5>
-                  </div>
-                  <div class="d-flex card-inputs mx-auto">
-                    <input id="pentagonFieldOne" class="" type="text" placeholder=" p"><p>cm</p>
-                    <input id="pentagonFieldTwo" class="" type="text" placeholder=" b"><p>cm</p>
-                </div>
-                  <div class="mx-8 p-3">
-                   <button id="btn-pentagon" class="btn-color w-100  btn-text-style">Calculator</button>
-                  </div>
-                </div>
-              </div>
-              <!-- six ellipse card -->
-              <div class="col">
-                <div class="card h-100" onmouseover="randomColor(this)">
-                  <img src="./images/ellipse.png" class="card-img-top p-4" alt="...">
-                  <div class="card-body card-text-style">
-                    <p id="ellipse-name" class="card-title">Ellipse</p>
-                    <h5 class="card-text">Area (A) =&Pi;ab</h5>
-                    <h5>a=<span>10</span>cm, b=<span>4</span>cm</h5>
-                  </div>
-                  <div class="d-flex card-inputs mx-auto">
-                    <input id="ellipseFieldOne" class="" type="text" placeholder=" a"><p>cm</p>
-                    <input id="ellipseFieldTwo" class="" type="text" placeholder=" b"><p>cm</p>
-                </div>
-                  <div class="mx-8 p-3">
-                   <button id="btn-ellipse" class="btn-color w-100  btn-text-style">Calculator</button>
-                  </div>
-                </div>
-              </div>
           </div>
+        </div>
+        <!-- two rectangle card -->
+        <div class="col">
+          <div class="card h-100" onmouseover="randomColor(this)">
+            <img src="./images/rectangle.png" class="card-img-top p-4" alt="...">
+            <div class="card-body card-text-style">
+              <p id="rectangle-name" class="card-title">Rectangle</p>
+              <h5 class="card-text">Area (A) = w &times; l </h5>
+            </div>
+            <div class="d-flex card-inputs mx-auto">
+              <input id="rectangleFieldOne" class="" type="text" placeholder=" w">
+              <p>cm</p>
+              <input id="rectangleFieldTwo" class="" type="text" placeholder=" l">
+              <p>cm</p>
+            </div>
+            <div class="mx-8 p-3">
+              <button id="btn-rectangle" class="btn-color w-100  btn-text-style">Calculator</button>
+            </div>
+          </div>
+        </div>
+        <!-- three parallelogram card -->
+        <div class="col">
+          <div class="card h-100" onmouseover="randomColor(this)">
+            <img src="./images/parallelogram.png" class="card-img-top p-4" alt="...">
+            <div class="card-body card-text-style">
+              <p id="parallelogram-name" class="card-title">Parallelogram</p>
+              <h5 class="card-text">Area (A) = b &times; h</h5>
+              <h5>b=<span>10</span>cm, h=<span>12</span>cm</h5>
+            </div>
+            <div class="d-flex card-inputs mx-auto">
+              <input id="parallelogramFieldOne" class="" type="text" placeholder=" b">
+              <p>cm</p>
+              <input id="parallelogramFieldTwo" class="" type="text" placeholder=" h">
+              <p>cm</p>
+            </div>
+            <div class="mx-8 p-3">
+              <button id="btn-parallelogram" class="btn-color w-100  btn-text-style">Calculator</button>
+            </div>
+          </div>
+        </div>
+        <!-- calculattion card -->
+        <section>
+          <div class="col px-1">
+            <div class="card  calculation-head">
+              <h4 class="text-center ">Area Calculation</h4>
+              <!-- calculate operate -->
+              <span id="calculation">
+
+              </span>
+            </div>
+          </div>
+        </section>
+        <!-- four rhonbus card -->
+        <div class="col">
+          <div class="card h-100" onmouseover="randomColor(this)">
+            <img src="./images/rhombus.png" class="card-img-top p-4" alt="...">
+            <div class="card-body card-text-style">
+              <p id="rhombus-name" class="card-title">Rhombus</p>
+              <h5 class="card-text">Area (A) = 0.5 &times; d<sub>1</sub> &times; d<sub>2</sub></h5>
+              <h5>d<sub>1</sub>=<span>16</span>cm, d<sub>2</sub>=<span>8</span>cm</h5>
+            </div>
+            <div class="d-flex card-inputs mx-auto">
+              <input id="rhombusFieldOne" class="" type="text" placeholder=" #">
+              <p>cm</p>
+              <input id="rhombusFieldTwo" class="" type="text" placeholder=" #">
+              <p>cm</p>
+            </div>
+            <div class="mx-8 p-3">
+              <button id="btn-rhombusField" class="btn-color w-100  btn-text-style">Calculator</button>
+            </div>
+          </div>
+        </div>
+        <!-- five pentagon card -->
+        <div class="col">
+          <div class="card h-100" onmouseover="randomColor(this)">
+            <img src="./images/pentagon.png" class="card-img-top p-4" alt="...">
+            <div class="card-body card-text-style">
+              <p id="pentagon-name" class="card-title">Pentagon</p>
+              <h5 class="card-text">Area (A) = 0.5 &times; p &times; b</h5>
+              <h5>p=<span>6</span>cm, b=<span>10</span>cm</h5>
+            </div>
+            <div class="d-flex card-inputs mx-auto">
+              <input id="pentagonFieldOne" class="" type="text" placeholder=" p">
+              <p>cm</p>
+              <input id="pentagonFieldTwo" class="" type="text" placeholder=" b">
+              <p>cm</p>
+            </div>
+            <div class="mx-8 p-3">
+              <button id="btn-pentagon" class="btn-color w-100  btn-text-style">Calculator</button>
+            </div>
+          </div>
+        </div>
+        <!-- six ellipse card -->
+        <div class="col">
+          <div class="card h-100" onmouseover="randomColor(this)">
+            <img src="./images/ellipse.png" class="card-img-top p-4" alt="...">
+            <div class="card-body card-text-style">
+              <p id="ellipse-name" class="card-title">Ellipse</p>
+              <h5 class="card-text">Area (A) =&Pi;ab</h5>
+              <h5>a=<span>10</span>cm, b=<span>4</span>cm</h5>
+            </div>
+            <div class="d-flex card-inputs mx-auto">
+              <input id="ellipseFieldOne" class="" type="text" placeholder=" a">
+              <p>cm</p>
+              <input id="ellipseFieldTwo" class="" type="text" placeholder=" b">
+              <p>cm</p>
+            </div>
+            <div class="mx-8 p-3">
+              <button id="btn-ellipse" class="btn-color w-100  btn-text-style">Calculator</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-      </section>
-   
-     
-    </main>
-    <!-- bootsrap js file  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- js file added -->
-    <script src="./js/common.js"></script>
-    <script src="./js/card.js"></script>
+    </section>
+
+
+  </main>
+  <!-- bootsrap js file  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- js file added -->
+  <script src="./js/common.js"></script>
+  <script src="./js/card.js"></script>
 </body>
+
 </html>
