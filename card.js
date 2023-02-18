@@ -63,20 +63,20 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
 
     const pentagonCalculate = 0.5*pentagonFieldOne*pentagonFieldTwo;
     const pentagonCalculateTotal = parseInt(pentagonCalculate);
-    displayData(number, triangleAreaParse, pentagonName)
+    displayData(number, pentagonCalculateTotal, pentagonName)
     
 
 })
 // Name of the Triangle card six
-document.getElementById('btn-triangle').addEventListener('click', function(){
+document.getElementById('btn-ellipse').addEventListener('click', function(){
     number +=1;
-    const triangleField =document.getElementById('baseline-Field').value;
-    const baselineField = document.getElementById('height-Field').value;
-    const triangleName = document.getElementById('triangle-name').innerText;
+    const ellipseFieldOne =document.getElementById('ellipseFieldOne').value;
+    const ellipseFieldTwo = document.getElementById('ellipseFieldTwo').value;
+    const ellipseName= document.getElementById('ellipse-name').innerText;
 
-    const triangleArea = 0.5*triangleField*baselineField;
-    const triangleAreaParse = parseInt(triangleArea);
-    displayData(number, triangleAreaParse, triangleName)
+    const ellipseCalculate =3.14159*ellipseFieldOne*ellipseFieldTwo;
+    const ellipseCalculateTotal = parseInt(ellipseCalculate);
+    displayData(number, ellipseCalculateTotal, ellipseName)
     
 
 })
