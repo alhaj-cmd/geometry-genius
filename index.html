@@ -33,11 +33,11 @@
     <!-- main part added -->
     <main class="d-flex my-5" >
         <!-- card aside -->
-      <section class="w-75 bg-light">
-        <div class="row row-cols-1 row-cols-md-3 g-2">
+      <section class="bg-light">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 g-4">
             <!-- one triangle card -->
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100" onmouseover="randomColor(this)">
                 <img src="./images/triangle.png" class="card-img-top p-4" alt="...">
                 <div class="card-body card-text-style">
                   <p id="triangle-name" class="card-title">Triangle</p>
@@ -54,7 +54,7 @@
             </div>
             <!-- two rectangle card -->
             <div class="col">
-              <div class="card h-100">
+              <div class="card h-100" onmouseover="randomColor(this)">
                 <img src="./images/rectangle.png" class="card-img-top p-4" alt="...">
                 <div class="card-body card-text-style">
                   <p id="rectangle-name" class="card-title">Rectangle</p>
@@ -71,7 +71,7 @@
             </div>
             <!-- three parallelogram card -->
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100" onmouseover="randomColor(this)">
                   <img src="./images/parallelogram.png" class="card-img-top p-4" alt="...">
                   <div class="card-body card-text-style">
                     <p id="parallelogram-name" class="card-title">Parallelogram</p>
@@ -87,9 +87,27 @@
                   </div>
                 </div>
               </div>
+              <!-- calculattion card -->
+              <section class="px-2">
+                <div>
+                    <div>
+                        <div class="card calculation-head">
+                         <h4 class="text-center ">Area Calculation</h4>
+                         <table class="table table-borderless">
+                            <tbody  id="calculation">
+                                <tr>
+                                  <th ></th>
+                                 
+                                </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
+                </div>
+              </section>
               <!-- four rhonbus card -->
               <div class="col">
-                <div class="card h-100">
+                <div class="card h-100" onmouseover="randomColor(this)">
                   <img src="./images/rhombus.png" class="card-img-top p-4" alt="...">
                   <div class="card-body card-text-style">
                     <p id="rhombus-name" class="card-title">Rhombus</p>
@@ -107,7 +125,7 @@
               </div>
               <!-- five pentagon card -->
               <div class="col">
-                <div class="card h-100">
+                <div class="card h-100" onmouseover="randomColor(this)">
                   <img src="./images/pentagon.png" class="card-img-top p-4" alt="...">
                   <div class="card-body card-text-style">
                     <p id="pentagon-name" class="card-title">Pentagon</p>
@@ -125,7 +143,7 @@
               </div>
               <!-- six ellipse card -->
               <div class="col">
-                <div class="card h-100">
+                <div class="card h-100" onmouseover="randomColor(this)">
                   <img src="./images/ellipse.png" class="card-img-top p-4" alt="...">
                   <div class="card-body card-text-style">
                     <p id="ellipse-name" class="card-title">Ellipse</p>
@@ -143,30 +161,15 @@
               </div>
           </div>
 
+
       </section>
-      <!-- calculation part bside -->
-      <section class="w-25 px-2">
-        <div class="row row-cols-1 row-cols-md-1">
-            <div class="col">
-                <div class="card calculation-head">
-                 <h4 class="text-center ">Area Calculation</h4>
-                 <table class="table table-borderless">
-                    <tbody  id="calculation">
-                        <tr>
-                          <th ></th>
-                         
-                        </tr>
-                      </tbody>
-                  </table>
-                </div>
-              </div>
-        </div>
-      </section>
+   
+     
     </main>
     <!-- bootsrap js file  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- js file added -->
-    <script src="./common.js"></script>
-    <script src="./card.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/card.js"></script>
 </body>
 </html>
